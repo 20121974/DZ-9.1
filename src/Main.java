@@ -7,8 +7,7 @@ public class Main {
         //return person;
   // }
     public static void main(String[] args) {
-        Book book = new Book("Левиафан", 100);
-        Author author = new Author("Б. Акунин");
-        System.out.println(book.getBookName() + " " + book.setPublishingYear() + " " + author.getAuthorName());
+        Book book = new Book("Левиафан", 100, "А.Пушкин");
+        System.out.println(book.getAuthorName() + " " + book.getBookName() + " " + book.setPublishingYear() + " страниц");
     }
 }
