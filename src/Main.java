@@ -1,13 +1,8 @@
 public class Main {
 
-    //public static Person createPerson(String name, int age) {
-    //    Person person = new Person();
-      //  person.name = name;
-        //person.are = age;
-        //return person;
-  // }
-    public static void main(String[] args) {
-        Book book = new Book("Левиафан", 100, "А.Пушкин");
-        System.out.println(book.getAuthorName() + " " + book.getBookName() + " " + book.setPublishingYear() + " страниц");
+    public static void main(String [] args) {
+        Book warAndPeace = new Book("warAndPeace", 1870);
+        Author lewTolstoy = new Author("lewTolstoy");
+        warAndPeace.setDatePublish(1865);
     }
 }
