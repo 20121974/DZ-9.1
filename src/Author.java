@@ -1,18 +1,28 @@
 public class Author {
-    private final String authorName;
-    private String surName;
+    public final String name;
+    public final String surname;
 
-    public Author (String authorName) {
-        this.authorName = authorName;
-        this.surName = surName;
-    }
-    public String getAuthorName() {
-        return getAuthorName();
+    public String getName() {
+        return name;
     }
 
-    public String getSurName() {
-        return getSurName();
+    public String getSurname() {
+        return surname;
     }
+
+    public Author(String name, String surname) {
+        this.name = name;
+        this.surname = surname;
+    }
+
+    @Override
+    public String toString() {
+        return "Author{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                '}';
+    }
+
 
 
 
